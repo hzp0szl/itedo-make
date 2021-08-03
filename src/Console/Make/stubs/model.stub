@@ -1,0 +1,19 @@
+<?php
+
+namespace DummyNamespace;
+
+class DummyClass extends BaseModel
+{
+    /**
+     * 表名
+     *
+     * @var string
+     */
+    protected $table = 'DummyTable';
+
+    /**
+     * 黑名单
+     * @var array
+     */
+    protected $guarded = [];
+}

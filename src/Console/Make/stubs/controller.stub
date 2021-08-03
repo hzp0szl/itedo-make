@@ -1,0 +1,79 @@
+<?php
+namespace DummyNamespace;
+
+use DummyRootNamespaceHttp\Controllers\Controller;
+use App\Http\Resources\DummyUseResources;
+use App\Http\Requests\DummyUseRequest;
+use App\Http\Requests\DummyUseUpdateRequest;
+use App\Utils\Exceptions\LogicException;
+use App\Utils\Resource;
+
+class DummyClass extends Controller
+{
+    /**
+     * AbcController constructor.
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * get请求 /photos
+     *
+     * @return mixed
+     */
+    public function index()
+    {
+        //
+    }
+
+    /**
+     * post请求 /photos
+     *
+     * @param DummyRequest $request
+     * @return array
+     * @throws LogicException
+     */
+    public function store(DummyRequest $request)
+    {
+        //
+    }
+
+    /**
+     * get带参数请求 /photos/{photo}
+     *
+     * @param $id
+     * @return array
+     * @throws LogicException
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * PUT/PATCH请求   /photos/{photo}
+     *
+     * @param DummyUpdateRequest $request
+     * @param $id
+     * @return array
+     * @throws LogicException
+     */
+    public function update(DummyUpdateRequest $request, $id)
+    {
+        //
+    }
+
+    /**
+     * DELETE 请求 /photos/{photo}
+     *
+     * @param $id
+     * @return array
+     * @throws LogicException
+     */
+    public function destroy($id)
+    {
+        //
+    }
+}
