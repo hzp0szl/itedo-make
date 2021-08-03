@@ -1,6 +1,6 @@
 <?php
 
-namespace Itedo\Make\Console\Make;
+namespace ItedoMake\Console\Make;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
