@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Make;
+namespace Itedo\Make\Console\Make;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
  * 创建资模型命令类
  *
  * @author : Just-Ly < E-mail:5575165@qq.com >
- * @date: 2019/10/31 10:27
+ * @date: 2021/8/1 10:27
  * @package App\Console\Commands\Make
  */
 class MakeModel extends GeneratorCommand

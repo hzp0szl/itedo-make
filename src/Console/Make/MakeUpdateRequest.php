@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Make;
+namespace Itedo\Make\Console\Make;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
@@ -10,7 +10,7 @@ use Symfony\Component\Console\Input\InputOption;
  * 创建请求修改校验命令类
  *
  * @author : Just-Ly < E-mail:5575165@qq.com >
- * @date: 2019/11/1 11:27
+ * @date: 2021/8/1 11:27
  * @package App\Console\Commands\Make
  */
 class MakeUpdateRequest extends GeneratorCommand
