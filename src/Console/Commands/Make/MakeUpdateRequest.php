@@ -1,40 +1,40 @@
 <?php
 
-namespace ItedoMake\Console\Make;
+namespace ItedoMake\Console\Commands\Make;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Input\InputOption;
 
 /**
- * 创建资源响应命令类
+ * 创建请求修改校验命令类
  *
  * @author : Just-Ly < E-mail:5575165@qq.com >
  * @date: 2021/8/1 11:27
  * @package App\Console\Commands\Make
  */
-class MakeResource extends GeneratorCommand
+class MakeUpdateRequest extends GeneratorCommand
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'make:auto-resource {name}';
+    protected $signature = 'make:auto-update-request {name}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = '创建资源返回命令';
+    protected $description = '创建请求校验命令';
 
     /**
-     * 资源
+     * 请求
      *
      * @var string
      */
-    protected $type = 'Resource';
+    protected $type = 'Request';
 
     /**
      * @return bool|void|null
@@ -57,7 +57,7 @@ class MakeResource extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__.'/stubs/resource.stub';
+        return __DIR__ . '/stubs/updateRequest.stub';
     }
 
     /**
@@ -68,7 +68,7 @@ class MakeResource extends GeneratorCommand
      */
     protected function getDefaultNamespace($rootNamespace)
     {
-        return $rootNamespace . '\Http\Resources';
+        return $rootNamespace . '\Http\Requests';
     }
 
     /**
@@ -78,6 +78,6 @@ class MakeResource extends GeneratorCommand
      */
     protected function getNameInput()
     {
-        return trim($this->argument('name')).'Resource';
+        return trim($this->argument('name')).'UpdateRequest';
     }
 }

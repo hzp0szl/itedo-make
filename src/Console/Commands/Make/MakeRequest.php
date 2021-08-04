@@ -1,26 +1,26 @@
 <?php
 
-namespace ItedoMake\Console\Make;
+namespace ItedoMake\Console\Commands\Make;
 
 use Illuminate\Console\GeneratorCommand;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Input\InputOption;
 
 /**
- * 创建请求修改校验命令类
+ * 创建请求校验命令类
  *
  * @author : Just-Ly < E-mail:5575165@qq.com >
  * @date: 2021/8/1 11:27
  * @package App\Console\Commands\Make
  */
-class MakeUpdateRequest extends GeneratorCommand
+class MakeRequest extends GeneratorCommand
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'make:auto-update-request {name}';
+    protected $signature = 'make:auto-request {name}';
 
     /**
      * The console command description.
@@ -57,7 +57,7 @@ class MakeUpdateRequest extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__.'/stubs/updateRequest.stub';
+        return __DIR__ . '/stubs/request.stub';
     }
 
     /**
@@ -78,6 +78,6 @@ class MakeUpdateRequest extends GeneratorCommand
      */
     protected function getNameInput()
     {
-        return trim($this->argument('name')).'UpdateRequest';
+        return trim($this->argument('name')).'Request';
     }
 }
