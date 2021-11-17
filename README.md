@@ -1,4 +1,12 @@
 # itedo-make
+```
+composer require itedo/itedo-make
+```
+### config/app.php 加配置
+```
+ItedoMake\Provider\MakeServiceProvider::class,
+```
+
 <h4>自定义命令</h4>
 根据业务需求，重写常用命令。以方便快捷生成开发文件
 
